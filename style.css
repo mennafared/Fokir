@@ -1,0 +1,1199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Home Bage */
+
+#home {
+  background-image: url(./hero\ img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  height: 100vh;
+}
+
+.home-container {
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar {
+  width: 77%;
+  margin-inline: auto;
+  font-family: 'Roboto', sans-serif;
+  padding-block: 18px;
+}
+
+.logo {
+  float: left;
+  width: 10%;
+
+}
+
+.logo a {
+  color: #ff305b;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-right {
+  text-align: end;
+  float: right;
+  font-size: 16px;
+  font-weight: 300;
+  width: 70%;
+  margin-left: 17px;
+}
+
+.navbar .nav-right ul li {
+  display: inline-block;
+  padding-inline: 10px;
+}
+
+.navbar .nav-right ul li a {
+  color: #fff;
+  transition-duration: 0.5s;
+}
+
+.navbar .nav-right ul li.diff a {
+  color: #ff305b;
+  font-weight: 100;
+}
+
+.navbar ul li a:hover {
+  color: #ff305b;
+  font-weight: 100;
+
+}
+
+.contant {
+  width: 100%;
+  position: relative;
+  top: 29%;
+  margin-inline: auto;
+  text-align: center;
+  color: rgba(255, 255, 255, .92);
+}
+
+.contant h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: 'Source Sans 3', sans-serif;
+  margin-bottom: 10px;
+}
+
+.contant h1 {
+  color: #ff305b;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 1.1;
+  font-family: 'Source Sans 3', sans-serif;
+  margin-bottom: 10px;
+}
+
+.contant h4 {
+  font-size: 18px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+  position: relative;
+  margin-inline: auto;
+  width: 400px ;
+}
+
+.contant h4::after {
+  content: " ";
+  background-color: #fff;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/* About Bage */
+
+#about {
+  width: 450px;
+  padding-block: 49px;
+  margin: 49px auto;
+}
+
+.about-left {
+  float: left;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+
+.about-left .parent {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.about-left .parent img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.about-left .parent .child {
+  background: rgba(0, 0, 0, 0.57);
+  border-radius: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.about-left .parent:hover .child {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.about-left .parent .child ul.icon {
+  width: fit-content;
+  position: relative;
+  top: 50%;
+  margin-inline: auto;
+}
+
+.about-left .parent .child ul.icon li {
+  margin-inline: 10px;
+  float: left;
+}
+
+.about-left .parent .child ul.icon li i {
+  color: #fff;
+  font-size: 17px;
+  transition: 0.5s ease;
+}
+
+.about-left .parent .child ul.icon li i:hover {
+  color: #ff305b;
+}
+
+.about-right {
+  float: right;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.about-right .right-top h2 {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 23px;
+  padding-left: 13px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about-right .right-top h2::before {
+  background: #ff305b;
+  content: " ";
+  height: 100%;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-right .right-top p {
+  border-bottom: 1px dashed #999999;
+  line-height: 26px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.about-right .right-bottom ul li {
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #555555;
+  margin-bottom: 15px;
+}
+
+.about-right .right-bottom ul li span {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.about-right .right-bottom button {
+  background: #ff305b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 4px;
+  border: transparent;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-right .right-bottom button:hover {
+  background: #EC2403
+}
+
+.about-right .right-bottom button i {
+  padding-left: 5px;
+}
+
+/* Services Bage */
+
+#services {
+  background-color: #f1f1f1;
+  padding-block: 50px 54px;
+}
+
+.services-top {
+  padding-block: 50px 20px;
+}
+
+.services-top h2 {
+  color: rgb(51, 51, 51);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.services-top h2::after {
+  background-color: #ff305b;
+  content: " ";
+  width: 160px;
+  height: 1px;
+  margin-inline: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.services-top h2::before {
+  content: " ";
+  width: 70px;
+  margin-inline: auto;
+  padding-block: 4px 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid #ff305b;
+  border-width: 1px 0;
+}
+
+.services-bottom {
+  width: 89%;
+  margin-inline: auto;
+}
+
+.services-bottom .item {
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding: 40px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.services-bottom .item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.1;
+  color: rgb(51, 51, 51);
+}
+
+.services-bottom .item p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(85, 85, 85);
+}
+
+.services-bottom .item i {
+  font-size: 30px;
+  display: block;
+  color: #ff305b;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.services-bottom .item:hover {
+  background-color: #fff;
+}
+
+.services-bottom .item:hover i {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Portfolio Bage */
+#portfolio {
+  margin-block: 45px 25px;
+  padding-block: 35px 25px;
+}
+
+.portfolio-top {
+  margin-bottom: 50px;
+}
+
+.portfolio-top h2 {
+  color: rgb(51, 51, 51);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.portfolio-top h2::after {
+  background-color: #ff305b;
+  content: " ";
+  width: 160px;
+  height: 1px;
+  margin-inline: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.portfolio-top h2::before {
+  content: " ";
+  width: 70px;
+  margin-inline: auto;
+  padding-block: 4px 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid #ff305b;
+  border-width: 1px 0;
+}
+
+.portfolio-top ul {
+  width: fit-content;
+  margin-inline: auto;
+  padding-left: 20px;
+}
+
+.portfolio-top ul li {
+  display: inline-block;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  margin-inline: 13px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.portfolio-top ul li span {
+  color: #ff305b;
+}
+
+.portfolio-bottom {
+  width: 400px;
+  margin-inline: auto;
+  padding-bottom: 20px;
+}
+
+.portfolio-bottom .protf-img {
+  width: 100%;
+  float: left;
+  margin-block: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-bottom .protf-img .shado {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateZ(100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.portfolio-bottom .protf-img:hover .shado {
+  transform: translateZ(0);
+  opacity: 1;
+}
+
+.portfolio-bottom .protf-img img {
+  width: 100%;
+  display: block;
+}
+
+/* Amount Bage */
+
+.amount {
+  background-color: #f1f1f1;
+  padding-block: 40px;
+}
+
+.amount .amount-container {
+  width: 450px;
+  margin-inline: auto;
+  margin-block: 40px;
+}
+
+.amount .amount-container .single-amount {
+  /* width: 25%; */
+  width: 100%;
+  float: left;
+  margin-block: 20px;
+  text-align: center;
+}
+
+.amount .amount-container .single-amount i {
+  color: #ff305b;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.amount .amount-container .single-amount h3 {
+  color: #333;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.amount .amount-container .single-amount h5 {
+  color: #555;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Testimonial Bage */
+
+#testimonial {
+  margin-block: 40px 50px;
+  padding-bottom: 50px;
+}
+
+.testimonial-top {
+  padding-top: 50px;
+  text-align: center;
+  margin-block: 40px;
+}
+
+.testimonial-top h2 {
+  color: rgb(51, 51, 51);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.testimonial-top h2::after {
+  background-color: #ff305b;
+  content: " ";
+  width: 160px;
+  height: 1px;
+  margin-inline: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.testimonial-top h2::before {
+  content: " ";
+  width: 70px;
+  margin-inline: auto;
+  padding-block: 4px 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid #ff305b;
+  border-width: 1px 0;
+}
+
+.testimonial-bottom {
+  width: 450px;
+  border-radius: 5px;
+  margin-inline: auto;
+  background-color: #f1f1f1;
+  position: relative;
+  overflow: auto;
+}
+
+.testimonial-bottom .triangle::before {
+  content: " ";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 95px;
+  border-color: transparent #ff305b #ff305b transparent;
+  transform: rotate(180deg)
+}
+
+.testimonial-bottom .bottom-left {
+  width: 110px;
+  margin: 30px auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-bottom .bottom-left img {
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.testimonial-bottom .bottom-right {
+  width: 100%;
+  /* width: 75%; */
+  float: left;
+  /* padding: 40px 25px ; */
+  padding: 20px 15px;
+  margin-bottom: 10px;
+}
+
+.testimonial-bottom .bottom-right h3 {
+  color: #333;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimonial-bottom .bottom-right h4 {
+  color: #777;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimonial-bottom .bottom-right h4 i {
+  color: #777;
+}
+
+.testimonial-bottom .bottom-right p {
+  color: #555;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 25px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 15px;
+}
+
+.testimonial-bottom .bottom-right i {
+  font-size: 14px;
+  color: #f1c30d;
+}
+
+#testimonial .shaps {
+  width: fit-content;
+  margin-inline: auto;
+  padding-top: 3px;
+}
+
+#testimonial span.oval {
+  display: inline-block;
+  width: 26px;
+  height: 10px;
+  background-color: #ff305b;
+  border-radius: 30px;
+}
+
+#testimonial span.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ff305b;
+  border-radius: 50%;
+}
+
+/* Blog Bage */
+#blog {
+  background-color: #f1f1f1;
+  padding-block: 20px 50px;
+}
+
+.blog-top {
+  padding-top: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.blog-top h2 {
+  color: rgb(51, 51, 51);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.blog-top h2::after {
+  background-color: #ff305b;
+  content: " ";
+  width: 160px;
+  height: 1px;
+  margin-inline: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.blog-top h2::before {
+  content: " ";
+  width: 70px;
+  margin-inline: auto;
+  padding-block: 4px 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid #ff305b;
+  border-width: 1px 0;
+}
+
+.blog-bottom {
+  width: 450px;
+  margin-inline: auto;
+  margin-bottom: 40px;
+}
+
+.blog-bottom .blog-item {
+  width: 100%;
+  background-color: #fff;
+  margin: 20px auto;
+}
+
+.blog-bottom .blog-item .image img {
+  width: 100%;
+  display: block;
+}
+
+.blog-bottom .blog-item .video iframe {
+  width: 100%;
+  height: 206px;
+}
+
+.blog-bottom .blog-item .blog-contant {
+  padding: 20px;
+}
+
+.blog-bottom .blog-item .blog-contant p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.blog-bottom .blog-item .blog-contant h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.blog-bottom .blog-item .blog-contant span {
+  color: #444;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.blog-item .blog-contant h3:hover,
+.blog-item .blog-contant span:hover {
+  color: #ff305b;
+}
+
+/* Contact Us Bage */
+#contact {
+  margin-block: 50px;
+}
+
+.contact-top {
+  padding-top: 45px;
+  text-align: center;
+  margin-block: 40px 50px;
+}
+
+.contact-top h2 {
+  color: rgb(51, 51, 51);
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.contact-top h2::after {
+  background-color: #ff305b;
+  content: " ";
+  width: 160px;
+  height: 1px;
+  margin-inline: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.contact-top h2::before {
+  content: " ";
+  width: 70px;
+  margin-inline: auto;
+  padding-block: 4px 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid #ff305b;
+  border-width: 1px 0;
+}
+
+.contact-bottom {
+  width: 450px;
+  margin-inline: auto;
+  padding-inline: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-bottom .text-name,
+.contact-bottom .text-email {
+  width: 100%;
+  padding-inline: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-bottom .text-subject {
+  width: 100%;
+  padding-inline: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-bottom .text-massage {
+  width: 100%;
+  padding-inline: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: auto;
+  margin-bottom: 25px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#contact .contact-bottom .text-massage textarea {
+  width: 100%;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #ccc;
+
+}
+
+#contact .contact-bottom input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#contact .contact-bottom input:focus {
+  outline: #ff305b !important;
+  border: 1px solid #ff305b;
+}
+
+#contact .contact-bottom textarea:focus {
+  outline: #ff305b !important;
+  border: 1px solid #ff305b;
+}
+
+.contact-bottom button {
+  background: #ff305b;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  margin-inline: 15px;
+  padding: 13px 20px;
+  border-radius: 4px;
+  border: transparent;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-bottom button:hover {
+  background: #EC2403
+}
+
+/* Footer */
+
+.footer {
+  background-color: #333;
+  padding-block: 50px;
+}
+
+.footer ul.icon {
+  width: fit-content;
+  padding-block: 15px 13px;
+  margin-inline: auto;
+}
+
+.footer ul.icon li {
+  float: left;
+  margin-inline: 12px;
+}
+
+.footer ul.icon li i {
+  color: #fff;
+  font-size: 16px;
+  transition: 0.5s ease;
+}
+
+.footer ul.icon li i:hover {
+  color: #ff305b;
+}
+
+.footer p {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer p span {
+  color: #ff305b;
+}
+
+.footer p span:hover {
+  text-decoration: underline;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  /* About Bage */
+  #about {
+    width: 750px;
+  }
+
+  .about-left {
+    width: 50%;
+  }
+
+  .about-right {
+    float: left;
+    width: 50%;
+    padding-top: 7px;
+    padding-left: 40px;
+  }
+
+  .about-right .right-top p {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+
+  .about-right .right-bottom ul li {
+    font-size: 13px;
+    float: left;
+    width: 50%;
+  }
+
+  .about-right .right-bottom ul li span {
+    font-size: 13px;
+  }
+
+  .about-right .right-bottom ul li.diff {
+    width: 40%;
+  }
+
+  .about-right .right-bottom button {
+    padding: 13px 24px;
+  }
+
+  /* Services Bage */
+
+  .services-bottom {
+    width: 80%;
+  }
+
+  .services-bottom .item {
+    width: 50%;
+  }
+
+  /* Portfolio Bage */
+  .portfolio-top {
+    padding-top: 20px;
+  }
+
+  .portfolio-bottom {
+    width: 750px;
+  }
+
+  .portfolio-bottom .protf-img {
+    width: 47%;
+    margin: 8px;
+    /* margin: 10px; */
+  }
+
+  /* Amount Bage */
+  .amount .amount-container {
+    width: 750px;
+  }
+
+  .amount .amount-container .single-amount {
+    width: 25%;
+  }
+
+  /* Testimonial Bage */
+  .testimonial-bottom {
+    width: 750px;
+  }
+
+  .testimonial-bottom .bottom-left {
+    width: 140px;
+  }
+
+  .testimonial-bottom .bottom-left {
+    float: left;
+    margin-block: 49px;
+    padding-left: 40px;
+  }
+
+  .testimonial-bottom .bottom-right {
+    width: 75%;
+    padding: 40px 25px;
+  }
+
+  /* Blog Bage */
+  .blog-bottom {
+    width: 750px;
+  }
+
+  .blog-bottom .blog-item {
+    width: 32%;
+    float: left;
+    margin-inline: 4px;
+  }
+
+  .blog-bottom .blog-item .video iframe {
+    height: 135px;
+  }
+
+  /* Contact Us Bage */
+
+  .contact-bottom {
+    width: 750px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .contact-bottom .text-name,
+  .contact-bottom .text-email {
+    width: 50%;
+    float: left;
+  }
+
+
+  .md-50 {
+    h1 {
+      font-size: 70px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    h4 {
+      font-size: 26px;
+    }
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  /* About Baeg */
+  #about {
+    width: 950px;
+  }
+
+  .about-right .right-top p {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .about-right .right-bottom ul li {
+    font-size: 16px;
+    float: left;
+    width: 50%;
+  }
+
+  .about-right .right-bottom ul li span {
+    font-size: 16px;
+  }
+
+  .about-right .right-bottom ul li.diff {
+    width: 50%;
+  }
+
+  .about-left {
+    width: 33.33333%;
+    border: 8px solid #555555;
+    margin-left: 8%;
+  }
+
+  .about-left .parent {
+    top: 22px;
+    left: 22px;
+  }
+
+  .about-right {
+    float: left;
+    width: 50%;
+    padding-left: 80px;
+  }
+
+  .about-right .right-bottom ul li {
+    float: left;
+  }
+
+  .about-right .right-bottom button {
+    padding: 10px 24px;
+  }
+
+  /* Services Bage */
+  .services-bottom .item {
+    width: 25%;
+  }
+
+  /* Portfolio Bage */
+
+  .portfolio-bottom {
+    width: 970px;
+  }
+
+  .portfolio-bottom .protf-img {
+    width: 31%;
+    margin: 10px;
+  }
+
+  /* Amount Bage */
+  .amount .amount-container {
+    width: 970px;
+  }
+
+  /* Blog Bage */
+  .blog-bottom {
+    width: 980px;
+    padding-left: 50px;
+  }
+
+  .blog-bottom .blog-item {
+    width: 30%;
+    float: left;
+    margin-inline: 10px;
+  }
+
+  .contact-bottom {
+    width: 800px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #about {
+    width: 1170px;
+  }
+
+  .blog-bottom {
+    width: 80%;
+    padding-left: 50px;
+  }
+
+  .blog-bottom .blog-item {
+    margin-inline: 15px;
+  }
+
+  .portfolio-bottom {
+    width: 1170px;
+  }
+
+  .blog-bottom .blog-item .video iframe {
+    height: 190px;
+  }
+}
