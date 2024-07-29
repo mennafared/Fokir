@@ -25,10 +25,15 @@ h6 {
   font-family: 'Source Sans 3', sans-serif;
 }
 
+button,
+i {
+  cursor: pointer;
+}
+
 /* Home Bage */
 
 #home {
-  background-image: url(./hero\ img.jpg);
+  background-image: url("../hero\ img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -42,37 +47,59 @@ h6 {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* navbar */
+nav {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 0px 14px 0px #0000001b;
+}
+
 .navbar {
-  width: 77%;
-  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   font-family: 'Roboto', sans-serif;
-  padding-block: 18px;
+  width: 85%;
+  margin-inline: auto;
 }
 
-.logo {
-  float: left;
-  width: 10%;
-
-}
-
-.logo a {
+.navbar .logo a {
   color: #ff305b;
-  font-size: 24px;
   font-weight: 600;
+  font-size: 1.5em;
 }
 
-.nav-right {
-  text-align: end;
-  float: right;
-  font-size: 16px;
-  font-weight: 300;
-  width: 70%;
-  margin-left: 17px;
+.navbar .nav-right ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right ul .close-icon {
+  display: none;
+  width: fit-content;
+  align-self: flex-end;
+  font-size: 1.375rem;
+  color: #ff305b;
+}
+
+nav .nav-right:target {
+  transform: translateX(0);
+}
+
+nav:has(.nav-right:target) {
+  height: 100%;
+  background-color: hsla(0, 0%, 0%, 0.502);
 }
 
 .navbar .nav-right ul li {
-  display: inline-block;
-  padding-inline: 10px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .navbar .nav-right ul li a {
@@ -82,14 +109,64 @@ h6 {
 
 .navbar .nav-right ul li.diff a {
   color: #ff305b;
-  font-weight: 100;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .navbar ul li a:hover {
   color: #ff305b;
-  font-weight: 100;
-
 }
+
+nav .menu-icon {
+  cursor: pointer;
+  font-size: 1.5625rem;
+  display: none;
+  color: #ff305b;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar .nav-right {
+    display: flex;
+    --inline-gap: 0px;
+    --block-gap: 15px;
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 999;
+    width: 350px;
+    height: 100%;
+    background-color: #000;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    transition: transform 400ms;
+  }
+
+  .navbar .nav-right ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .nav-right ul li {
+    margin-block: 10px;
+  }
+
+  nav .nav-right .close-icon {
+    display: block;
+    padding: 10px 15px 5px;
+  }
+
+  nav .nav-right a {
+    width: 100%;
+    padding: var(--block-gap) 10px;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+}
+
+/* end nav bar */
 
 .contant {
   width: 100%;
@@ -124,17 +201,7 @@ h6 {
   margin-bottom: 10px;
   position: relative;
   margin-inline: auto;
-  width: 400px ;
-}
-
-.contant h4::after {
-  content: " ";
-  background-color: #fff;
-  width: 2px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  width: 400px;
 }
 
 /* About Bage */
@@ -892,6 +959,7 @@ h6 {
 .contact-bottom button:hover {
   background: #EC2403
 }
+
 
 /* Footer */
 

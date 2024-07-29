@@ -15,8 +15,8 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap&family=Source+Sans+3:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="./media.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animated-headlines.css">
 </head>
 
 <body>
@@ -24,28 +24,45 @@
 
   <div id="home">
     <div class="home-container">
-      <div class="navbar">
-        <div class="logo">
-          <a href="#">Fokir</a>
+
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a href="#">Fokir</a>
+          </div>
+
+          <div class="nav-right" id="navLinks">
+            <ul>
+              <a href="#home" class="close-icon">
+                <i class="fa-solid fa-xmark"></i>
+              </a>
+              <li class="diff"><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#testimonial">Testimonial</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <a href="#navLinks" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+          </a>
+
         </div>
-        <div class="nav-right">
-          <ul>
-            <li class="diff"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonial">Testimonial</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="clear-fix"></div>
-      </div>
+      </nav>
+
 
       <div class="contant md-50">
         <h3> Hello i'm</h3>
         <h1>ALEX SMITH</h1>
-        <h4>Professional Web Developer</h4>
+        <h4 data-wow-delay="0.2s" class="cd-headline clip wow fadeInUp">professional Web
+          <span class="cd-words-wrapper" style="width: 116px;">
+            <b class="is-hidden">Designer</b>
+            <b class="is-visible">Designer</b>
+            <b class="is-hidden">Developer</b>
+          </span>
+        </h4>
       </div>
     </div>
   </div>
@@ -324,6 +341,11 @@
     <div class="clear-fix"></div>
     <p>Copy Right 2018 © By <span>Theme-fair</span> All Rights Reserved</p>
   </div>
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
